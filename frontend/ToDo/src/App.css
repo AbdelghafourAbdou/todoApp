@@ -1,0 +1,183 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  overflow-x: hidden;
+}
+
+h1, h4, h3, p {
+  margin: 0;
+}
+
+.outline {
+  display: grid;
+  grid-template-columns: 3fr 5fr 4fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 0px;
+  width: 100vw;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  height: 90vh;
+  border-radius: 2px;
+  padding: 15px;
+  gap: 2vh;
+}
+.title {
+  margin-bottom: 1vh;
+}
+.tasks, .tags {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.taskTime, .tag {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.taskTimeIcon {
+  flex-basis: 10%;
+  max-width: 7%;
+  min-width: 20px;
+  position: relative;
+  bottom: 0.05em;
+}
+.taskDetailsIcon {
+  flex-basis: 10%;
+  max-width: 7%;
+  min-width: 30px;
+  position: relative;
+  top: 0.15em;
+}
+.taskTimeTitle {
+  flex-basis: 80%;
+  padding-left: 10px;
+}
+.taskDetailsName {
+  flex-basis: 88%;
+  padding-left: 10px;
+}
+.taskTimeNumber {
+  flex-basis: 10%;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+}
+.tasksCount {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+.colorSquare {
+  flex-basis: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.innerColorSquare {
+  min-width: 80%;
+  min-height: 70%;
+  border-radius: 0.25rem;
+} 
+
+.middleContainer {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5vh;
+}
+.todayNumber {
+  margin-left: 4vw;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  width: 5vw;
+  font-size: 2.2em;
+}
+.addTask {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  padding-left: 1em;
+  color: #858585;
+  background-color: rgb(234, 232, 232);
+  height: 6vh;
+  align-items: center;
+}
+.addTaskButton {
+  padding: 5px !important;
+  transform: translateX(-0.4em);
+  height: 26px;
+}
+.addTaskButton:hover {
+  background-color: rgb(221, 221, 221);
+}
+.plusColor {
+  filter: invert(59%) sepia(0%) saturate(0%) hue-rotate(136deg) brightness(89%) contrast(90%);
+}
+.tagPlusColor {
+  filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(95deg) brightness(99%) contrast(105%);
+}
+.taskDisplay {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0.75em;
+  height: 6vh;
+  align-items: center;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  height: 90vh;
+  border-radius: 2px;
+  padding: 15px;
+  gap: 2vh;
+  max-width: 25vw;
+}
+
+.rightTaskDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding-left: 0.75em;
+  flex-basis: 80%;
+}
+.tagColor {
+  display: inline-block;
+  width: auto;
+  padding: 0.3em;
+  margin: 0 auto;
+  border-radius: 0.35em;
+}
+.rightTaskButtons {
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+  padding-left: 0.75em;
+}
+
+.tagsCollection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.15em;
+}
+.tagsCollection > p {
+  margin: 0;
+}
